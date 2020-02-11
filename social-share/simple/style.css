@@ -1,0 +1,36 @@
+body {
+  padding: 30px;
+  font-family: snas-serif;
+}
+.social-share {
+  padding: 0;
+  margin: -6px;
+  display: flex;
+  justify-content: flex-start;
+}
+.social-share li {
+  margin: 6px;
+}
+.social-share li a {
+  border: 0;
+  width: 30px;
+  opacity: 0.8;
+  height: auto;
+  color: #1d1d24;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.social-share li a:hover {
+  color: #f9004d;
+  opacity: 1;
+}
+.social-share li:hover a {
+  box-shadow: none;
+  background: transparent;
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+}

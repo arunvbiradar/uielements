@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blog Card with title wrap</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style>
+			body {
+			  padding: 10px 0;
+			  background-color: #f4f4f4;
+			  font-family: 'Montserrat', sans-serif;
+			}
+			a {
+			  text-decoration: none;
+			  transition: all 0.3s ease-in-out;
+			}
+			a:hover,
+			a:focus,
+			a:active {
+			  text-decoration: none;
+			}
+			.btn {
+			  text-transform: uppercase;
+			}
+			.btn.btn-lg {
+			  padding: 6px 30px;
+			}
+			.thumbnail-title {
+			  font-size: 20px;
+			  margin-top: 5px;
+			}
+			.events {
+			  border: 0;
+			  padding: 0;
+			  border-radius: 3px;
+			  background-color: transparent;
+			}
+			.events figure {
+			  position: relative;
+			}
+			.events figure img {
+			  width: 100%;
+			}
+			.events figure .overlay {
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  position: absolute;
+			  transition: all 0.3s ease-in-out;
+			  background: rgba(0, 0, 0, 0);
+			  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+			}
+			.events .caption {
+			  padding: 0;
+			}
+			.events .caption .event-name {
+			  float: left;
+			  margin: 5px 0;
+			  max-width: 65%;
+			  font-size: 16px;
+			  overflow: hidden;
+			  line-height: 20px;
+			  white-space: nowrap;
+			  display: inline-block;
+			  text-overflow: ellipsis;
+			}
+			.events .caption .event-date {
+			  color: #777;
+			  float: right;
+			  margin: 5px 0;
+			  font-size: 12px;
+			  line-height: 20px;
+			  display: inline-block;
+			}
+			.events .caption .event-location {
+			  clear: both;
+			  color: #555;
+			  font-size: 14px;
+			  line-height: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-lg-4 col-md-4 col-sm-6">
+			<div class="thumbnail events">
+				<figure>
+					<a href=""><img src="http://projects.mostlikers.com/_images/estate-image.jpg" alt="Event banner" /></a>
+					<div class="overlay"></div>
+				</figure>
+				<div class="caption">
+					<a href=""class="event-name">An Arbor Day to Remember An Arbor Day to Remember</a>
+					<span class="event-date">30<sup>th</sup> Jun, 2016</span>
+					<div class="event-location">Bengalore</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>

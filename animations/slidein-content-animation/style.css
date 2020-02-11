@@ -1,0 +1,94 @@
+.slide {
+  height: auto !important;
+  display: block !important;
+}
+.slide .xs-overlay {
+  left: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 101;
+  height: 100%;
+  opacity: 0;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in 0.8s;
+  -o-transition: all 0.4s ease-in 0.8s;
+  transition: all 0.4s ease-in 0.8s;
+  cursor: url('https://html.xpeedstudio.com/upturn/assets/images/cross-out.png'), pointer;
+}
+.slide .xs-sidebar-widget {
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  right: -100%;
+  position: fixed;
+  z-index: 999999;
+  overflow: hidden;
+  overflow-y: auto;
+  max-width: 420px;
+  visibility: hidden;
+  background-color: #fff;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.5s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+  -o-transition: all 0.5s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+  -webkit-transition: all 0.5s cubic-bezier(0.9, 0.03, 0, 0.96) 0.6s;
+}
+.slide.in .xs-overlay {
+  left: 0;
+  opacity: 0.9;
+  visibility: visible;
+  transition: all 0.8s ease-out 0s;
+  -o-transition: all 0.8s ease-out 0s;
+  -webkit-transition: all 0.8s ease-out 0s;
+}
+.slide.in .xs-sidebar-widget {
+  right: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.4s;
+  -o-transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.4s;
+  -webkit-transition: all 0.7s cubic-bezier(0.9, 0.03, 0, 0.96) 0.4s;
+}
+.slide.in .sidebar-widget-container {
+  top: 0px;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 1s ease-out 1.2s;
+  -o-transition: all 1s ease-out 1.2s;
+  transition: all 1s ease-out 1.2s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.black-bg {
+  background-color: #000000;
+}
+.sidebar-widget-container {
+  top: 150px;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  transition: all 0.3s ease-in 0.3s;
+  -o-transition: all 0.3s ease-in 0.3s;
+  -webkit-transition: all 0.3s ease-in 0.3s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.widget-heading {
+  top: 0;
+  right: 0;
+  padding: 25px;
+  position: absolute;
+}
+.widget-heading button[data-toggle] {
+  color: #333;
+  font-size: 36px;
+  line-height: 20px;
+  font-weight: lighter;
+  outline: none !important;
+  text-decoration: none !important;
+}
+.sidebar-textwidget {
+  padding: 40px;
+  padding-top: 120px;
+}

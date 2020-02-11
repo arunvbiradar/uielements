@@ -1,0 +1,46 @@
+.card {
+  overflow: hidden;
+  position: relative;
+  background-color: #212121;
+}
+.card img {
+  transition-delay: 0.1s;
+  transition: all 0.5s ease-in-out;
+}
+.card .card-body,
+.card .card-footer {
+  bottom: 0;
+  color: #ededed;
+  position: absolute;
+}
+.card .card-body {
+  z-index: 3;
+  background-color: transparent;
+}
+.card .card-footer {
+  left: 0;
+  right: 0;
+  border: 0;
+  z-index: 2;
+  padding: 0;
+  top: -200px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, #131722 100%);
+}
+.card::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  content: '';
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 23, 68, 0.8);
+}
+.card:hover::before {
+  opacity: 1;
+}
+.card:hover > img {
+  transform: scale(1.8);
+}

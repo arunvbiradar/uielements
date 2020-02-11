@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple Responsive Bootstrap Footer</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style>
+			* {
+			  outline: none;
+			}
+			a {
+			  color: #2196F3;
+			}
+			a:hover {
+			  color: #1976D2;
+			  text-decoration: none;
+			}
+			a:focus {
+			  color: #2196F3;
+			  text-decoration: none;
+			}
+			a:active {
+			  color: #1976D2;
+			  text-decoration: none;
+			}
+			body {
+			  font-family: 'Montserrat', sans-serif;
+			  background-color: #EEEEEE;
+			}
+			.text-pri {
+			  color: #2196F3;
+			}
+			.text-info {
+			  color: #673AB7;
+			}
+			.text-mute {
+			  color: #CFD8DC;
+			}
+			.text-light {
+			  color: #FAFAFA;
+			}
+			.text-danger {
+			  color: #f44336;
+			}
+			.text-success {
+			  color: #4CAF50;
+			}
+			.text-warning {
+			  color: #FF5722;
+			}
+			.social-links a {
+			  width: 30px;
+			  height: 30px;
+			  color: #FAFAFA;
+			  line-height: 30px;
+			  text-align: center;
+			  border-radius: 50%;
+			  -o-border-radius: 50%;
+			  -ms-border-radius: 50%;
+			  -moz-border-radius: 50%;
+			  -webkit-border-radius: 50%;
+			  display: inline-block;
+			}
+			.social-links a.facebook {
+			  background-color: #4D67A4;
+			}
+			.social-links a.facebook:hover {
+			  color: #4D67A4;
+			  background-color: #FAFAFA;
+			}
+			.social-links a.g-plus {
+			  background-color: #D84A36;
+			}
+			.social-links a.g-plus:hover {
+			  color: #D84A36;
+			  background-color: #FAFAFA;
+			}
+			.social-links a.twitter {
+			  background-color: #26A7E0;
+			}
+			.social-links a.twitter:hover {
+			  color: #26A7E0;
+			  background-color: #FAFAFA;
+			}
+			footer {
+			  color: #CFD8DC;
+			  padding-top: 20px;
+			  background-color: #333;
+			}
+			@media (max-width: 767px) {
+			  footer [class^="col-"] + [class^="col-"] {
+			    margin-top: 30px;
+			  }
+			}
+			footer h3 {
+			  color: #2196F3;
+			  margin: 0 0 5px;
+			  font-size: 18px;
+			}
+			footer p + p {
+			  margin-top: 10px;
+			}
+			footer ul > li > a {
+			  color: #CFD8DC;
+			}
+			footer .copyright {
+			  margin-top: 20px;
+			  line-height: 40px;
+			  text-align: center;
+			  background-color: #252525;
+			}
+		</style>
+	</head>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h3>About</h3>
+					<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel beatae consequuntur error, alias sapiente amet ex perferendis laboriosam, hic soluta sit recusandae nam illum in quas veniam aliquam animi velit...</p>
+					<p class="text-pri">www.yourdomain.com</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-3">
+					<h3>Contact</h3>
+					<p>15/4, 3rd street,
+					Venkateshwara Nagar Adyar, Chennai - 600020</p>
+					<ul class="list-unstyled">
+						<li>+91 44 4481 2358</li>
+						<li>+91 11235 8132</li>
+					</ul>
+					<ul class="list-unstyled">
+						<li>team@yourcompany.in</li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-3">
+					<h3>Links</h3>
+					<ul class="list-unstyled">
+						<li><a href="">About</a></li>
+						<li><a href="">FAQ's</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Terms & Conditions</a></li>
+					</ul>
+					<div class="social-links">
+						<ul class="list-inline mrg-bz">
+							<li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="" class="g-plus"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">&copy; 2016. Your Company. All Right Reserved</div>
+	</footer>
+	<body>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>

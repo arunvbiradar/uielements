@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Three Row Responsive Bootstrap Footer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Old+Standard+TT:400,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		.lato {
+		  font-family: 'lato', sans-serif;
+		}
+		.oldSt {
+		  font-family: 'Old Standard TT', serif;
+		}
+		.dis-inb {
+		  display: inline-block;
+		}
+		footer,
+		.copyright {
+		  padding: 50px 0;
+		}
+		@media (max-width: 767px) {
+		  footer,
+		  .copyright {
+		    padding: 15px 0;
+		  }
+		}
+		footer,
+		footer a {
+		  color: #a9abb0;
+		}
+		footer {
+		  font-family: 'lato', sans-serif;
+		  font-size: 12px;
+		  border-top: 10px solid #b5dddf;
+		}
+		footer .copyright {
+		  margin-top: 50px;
+		  padding-bottom: 0;
+		  text-align: center;
+		  border-top: 1px solid #f3f2ee;
+		}
+		footer .copyright .inb {
+		  display: inline-block;
+		}
+		footer .copyright .network {
+		  margin: 0 50px;
+		}
+		footer .copyright .payment {
+		  margin-right: 20px;
+		}
+		@media (min-width: 992px) {
+		  footer .copyright .inb {
+		    float: left;
+		  }
+		}
+		@media (max-width: 991px) {
+		  footer .copyright .network {
+		    margin: 0 30px;
+		  }
+		  footer .copyright .payment {
+		    margin-right: 5px;
+		  }
+		  footer .copyright .payment li {
+		    padding: 0;
+		    margin-bottom: 2px;
+		  }
+		}
+		footer a {
+		  color: #a9abb0;
+		  line-height: 24px;
+		}
+		footer a:hover,
+		footer a:focus,
+		footer a:active {
+		  color: #3c3633;
+		  text-decoration: none;
+		}
+		footer .h5 {
+		  margin-top: 0;
+		  color: #3c3633;
+		  font-size: 12px;
+		  font-weight: 700;
+		  text-transform: uppercase;
+		}
+		footer .social-links > li + li {
+		  margin-left: 5px;
+		}
+		@media (min-width: 992px) {
+		  footer .newsletter .input-group {
+		    margin-top: 20px;
+		  }
+		}
+		footer .newsletter .form-control,
+		footer .newsletter .btn {
+		  border-radius: 0;
+		  border: 0;
+		}
+		footer .newsletter .form-control {
+		  background-color: #f1f1f2;
+		  box-shadow: none;
+		  font-size: 12px;
+		  line-height: 20px;
+		}
+		footer .newsletter .btn {
+		  background-color: #b5dddf;
+		  font-size: 14px;
+		  line-height: 26px;
+		  outline: none !important;
+		}
+		@media (max-width: 767px) {
+		  footer .newsletter {
+		    margin-top: 15px;
+		  }
+		}
+		@media (max-width: 767px) {
+		  footer .links [data-toggle] {
+		    cursor: pointer;
+		    margin-bottom: -1px;
+		    line-height: 30px;
+		    border: solid #f3f2ee;
+		    border-width: 1px 0;
+		  }
+		  footer .links [data-toggle]:after {
+		    content: '';
+		    width: 5px;
+		    height: 5px;
+		    float: right;
+		    margin-top: 10px;
+		    margin-right: 5px;
+		    display: inline-block;
+		    border: solid #3c3633;
+		    border-width: 0 0 1px 1px;
+		    transform: rotate(-45deg);
+		  }
+		  footer .links [data-toggle][aria-expanded="true"] {
+		    border-bottom: 0;
+		  }
+		  footer .links [data-toggle][aria-expanded="true"]:after {
+		    transform: rotate(135deg);
+		  }
+		  footer .links [id] {
+		    display: none;
+		  }
+		  footer .links [id].in,
+		  footer .links [id].collapsing {
+		    display: block;
+		  }
+		}
+	</style>
+</head>
+	<footer>
+		<div class="links">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-sm-12">
+						<div class="row">
+							<div class="col-sm-3">
+								<h5 class="h5" data-toggle="collapse" data-target="#aboutUs" aria-expanded="false">About us</h4>
+								<ul class="list-unstyled" id="aboutUs">
+									<li><a href="">The Company</a></li>
+									<li><a href="">Our Story/ Who are we</a></li>
+									<li><a href="">From a Mine To You</a></li>
+									<li><a href="">Meet our Team</a></li>
+									<li><a href="">Trust</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<h5 class="h5" data-toggle="collapse" data-target="#customerCare" aria-expanded="false">Customer Care</h5>
+								<ul class="list-unstyled" id="customerCare">
+									<li><a href="">Free Shipping & Returns
+									<li><a href="">Lifetime Warranty</a></li>
+									<li><a href="">International Shipping</a></li>
+									<li><a href="">Money Back Gurantee</a></li>
+									<li><a href="">Shopping Assistance</a></li>
+									<li><a href="">FAQS</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<h5 class="h5" data-toggle="collapse" data-target="#education" aria-expanded="false">Education</h4>
+								<ul class="list-unstyled" id="education">
+									<li><a href="">1.800.emrada</a></li>
+									<li><a href="">Email Us</a></li>
+									<li><a href="">Chat with a Stylist</a></li>
+									<li><a href="">Chat with a Jeweler</a></li>
+									<li><a href="">Track your Order</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<h5 class="h5" data-toggle="collapse" data-target="#contactUs" aria-expanded="false">Contact us</h4>
+								<ul class="list-unstyled" id="contactUs">
+									<li><a href="">Diamond the 4C's</a></li>
+									<li><a href="">Diamond Shape Guide</a></li>
+									<li><a href="">Diamond Trend Guide</a></li>
+									<li><a href="">Certification Guide</a></li>
+									<li><a href="">How to buy an engagement ring</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-12">
+						<div class="newsletter">
+							<h5 class="h5">Latest from emrada</h4>
+							<div class="row">
+								<div class="col-md-12 col-sm-6">
+									<p>Be the first to know about exciting new designs, special events, store openings and much more.</p>
+								</div>
+								<div class="col-md-12 col-sm-6">
+									<div class="input-group">
+										<input type="text" class="form-control input-lg" placeholder="Your Email Address">
+										<span class="input-group-btn"><button class="btn btn-default btn-lg" type="button"><i class="fa fa-arrow-right"></i></button></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="dis-inb">
+					<div class="inb copy">© 2018 Emrada. All Rights Reserved.</div>
+					<div class="inb list-inline network">
+						<ul class="list-inline social-links">
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram"></i></a></li>
+							<li><a href=""><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+					<div class="inb payment">
+						<ul class="list-inline">
+							<li><img src="http://placehold.it/50x30" alt=""></li>
+							<li><img src="http://placehold.it/50x30" alt=""></li>
+							<li><img src="http://placehold.it/50x30" alt=""></li>
+							<li><img src="http://placehold.it/50x30" alt=""></li>
+							<li><img src="http://placehold.it/50x30" alt=""></li>
+						</ul>
+					</div>
+					<div class="inb trust"><img src="http://placehold.it/100x30" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<body>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

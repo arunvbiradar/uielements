@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Blog Card with content wrap</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+		<style>
+			body {
+			  padding: 10px 0;
+			  background-color: #f4f4f4;
+			  font-family: 'Montserrat', sans-serif;
+			}
+			a {
+			  text-decoration: none;
+			  transition: all 0.3s ease-in-out;
+			}
+			a:hover,
+			a:focus,
+			a:active {
+			  text-decoration: none;
+			}
+			.btn {
+			  text-transform: uppercase;
+			}
+			.btn.btn-lg {
+			  padding: 6px 30px;
+			}
+			.thumbnail-title {
+			  font-size: 20px;
+			  margin-top: 5px;
+			}
+			.blog-thumbnail {
+			  padding: 0;
+			  border-radius: 3px;
+			  border: 1px solid #ddd;
+			  box-shadow: 0 1px 10px 1px #ccc;
+			}
+			.blog-thumbnail figure {
+			  overflow: hidden;
+			  position: relative;
+			  text-align: center;
+			}
+			.blog-thumbnail figure img {
+			  max-width: 100%;
+			}
+			.blog-thumbnail figure .overlay {
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  position: absolute;
+			  transition: all 0.3s ease-in-out;
+			  background: rgba(0, 0, 0, 0);
+			  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+			  background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+			}
+			.blog-thumbnail p {
+			  color: #333;
+			  margin-bottom: 0;
+			  line-height: 16px;
+			}
+			.blog-thumbnail .caption {
+			  padding: 15px;
+			  font-size: 12px;
+			  transition: all 0.3s ease-in-out;
+			}
+			.blog-thumbnail .caption .content {
+			  font-size: 14px;
+			}
+			.blog-thumbnail .caption .content p {
+			  overflow: hidden;
+			  white-space: nowrap;
+			  text-overflow: ellipsis;
+			}
+			.blog-thumbnail .caption .title {
+			  font-size: 18px;
+			  overflow: hidden;
+			  line-height: 20px;
+			  white-space: nowrap;
+			  text-overflow: ellipsis;
+			  text-transform: uppercase;
+			}
+			.blog-thumbnail .caption .title a {
+			  color: #333;
+			}
+			.blog-thumbnail .caption .title a:hover {
+			  color: #2980B9;
+			}
+			.blog-thumbnail .caption .meta-data {
+			  color: #777;
+			  font-size: 12px;
+			  line-height: 20px;
+			  margin-bottom: 5px;
+			  max-width: 65%;
+			  overflow: hidden;
+			  white-space: nowrap;
+			  display: inline-block;
+			  text-overflow: ellipsis;
+			}
+			.blog-thumbnail .caption .meta-data a {
+			  color: #777;
+			}
+			.blog-thumbnail .caption .meta-data a .fa {
+			  color: #2980B9;
+			}
+			.blog-thumbnail .caption .meta-data a:hover {
+			  color: #2980B9;
+			}
+			.blog-thumbnail .caption .show-more {
+			  color: #333;
+			  margin-top: 5px;
+			  display: inline-block;
+			}
+			.blog-thumbnail .caption .show-more:hover {
+			  color: #2980B9;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="col-md-4 col-sm-6">
+			<div class="thumbnail blog-thumbnail">
+				<figure>
+					<img src="http://projects.mostlikers.com/_images/estate-image.jpg" alt="Blog title" />
+					<figcaption class="overlay"></figcaption>
+				</figure>
+				<div class="caption">
+					<div class="title"><a href="#">Gorgeous Ensea House in California</a></div>
+					<div class="clearfix">
+						<span class="meta-data">By <a href="">Admin</a></span>
+						<span class="meta-data pull-right">29/06/2016</span>
+					</div>
+					<div class="content">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nulla porro qui quo expedita voluptas ab iure dolore.</p>
+						<a href="" class="show-more">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>

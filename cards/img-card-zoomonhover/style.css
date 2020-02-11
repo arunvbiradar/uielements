@@ -1,0 +1,45 @@
+.card {
+  overflow: hidden;
+  position: relative;
+  background-color: #212121;
+}
+.card img {
+  transition-delay: 0.1s;
+  transition: all 0.5s ease-in-out;
+}
+.card .card-body {
+  color: #ededed;
+  position: relative;
+  background-color: #212121;
+}
+.card .card-body .content {
+  display: inline-block;
+}
+.card .card-body::after {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.card::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: 1;
+  content: '';
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(255, 23, 68, 0.8);
+}
+.card:hover img {
+  transform: scale(1.8);
+}
+.card:hover::before {
+  opacity: 1;
+}
+.card:hover .card-body {
+  z-index: 2;
+  background-color: transparent;
+}

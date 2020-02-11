@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Three Row Responsive Bootstrap Header</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		* {
+		  outline: none !important;
+		}
+		a {
+		  color: #FF5656;
+		}
+		a:hover {
+		  color: #1976D2;
+		  text-decoration: none;
+		}
+		a:focus {
+		  color: #FF5656;
+		  text-decoration: none;
+		}
+		a:active {
+		  color: #1976D2;
+		  text-decoration: none;
+		}
+		body {
+		  font-family: 'Montserrat', sans-serif;
+		  background-color: #EEEEEE;
+		}
+		.text-pri {
+		  color: #FF5656;
+		}
+		.text-info {
+		  color: #673AB7;
+		}
+		.text-mute {
+		  color: #CFD8DC;
+		}
+		.text-light {
+		  color: #FFF;
+		}
+		.text-danger {
+		  color: #f44336;
+		}
+		.text-success {
+		  color: #4CAF50;
+		}
+		.text-warning {
+		  color: #FF5722;
+		}
+		#searchBar {
+		  padding: 0;
+		}
+		.searchBar {
+		  overflow: hidden;
+		  background: #EEEEEE;
+		  border-radius: 3px;
+		  -o-border-radius: 3px;
+		  -ms-border-radius: 3px;
+		  -moz-border-radius: 3px;
+		  -webkit-border-radius: 3px;
+		  border: 1px solid #E0E0E0;
+		}
+		.searchBar .form-control {
+		  border: 0;
+		  box-shadow: none;
+		  -o-box-shadow: none;
+		  -ms-box-shadow: none;
+		  -moz-box-shadow: none;
+		  -webkit-box-shadow: none;
+		  background-color: transparent;
+		}
+		.searchBar .input-group-btn .form-control {
+		  width: auto;
+		  border-right: 1px solid #E0E0E0;
+		}
+		.searchBar .input-group-btn .btn {
+		  border: 0;
+		  box-shadow: none;
+		  -o-box-shadow: none;
+		  -ms-box-shadow: none;
+		  -moz-box-shadow: none;
+		  -webkit-box-shadow: none;
+		  background-color: transparent;
+		}
+		.searchBar.focus {
+		  border-color: #FF5656;
+		}
+		.dropdown-menu {
+		  margin: 0;
+		  padding: 0;
+		}
+		.dropdown-menu li {
+		  margin: 0;
+		}
+		.dropdown-menu li a {
+		  padding: 5px 0;
+		  margin: 0 15px;
+		  text-transform: initial;
+		  font-size: 14px !important;
+		  line-height: 24px !important;
+		}
+		.dropdown-menu li a:hover,
+		.dropdown-menu li a:focus,
+		.dropdown-menu li a:active {
+		  background-color: transparent;
+		}
+		.topBar {
+		  line-height: 30px;
+		  background-color: #FFF;
+		}
+		.topBar a {
+		  line-height: 30px;
+		}
+		.topBar ul {
+		  margin-left: 0;
+		}
+		.topBar .priNav {
+		  margin-bottom: 0;
+		}
+		.topBar .secNav {
+		  color: #CFD8DC;
+		  margin-bottom: 0;
+		  text-transform: uppercase;
+		}
+		.topBar .secNav a {
+		  font-size: 0;
+		}
+		.topBar li {
+		  padding: 0;
+		  font-size: 12px;
+		  color: #555;
+		  line-height: 14px;
+		}
+		.topBar li a {
+		  color: #555;
+		}
+		.topBar li a:hover {
+		  color: #252525;
+		  text-decoration: none;
+		}
+		.topBar li a:hover .fa {
+		  color: #252525;
+		}
+		.topBar li .fa {
+		  color: #FF5656;
+		  font-size: 14px;
+		  margin-right: 3px;
+		}
+		.topBar li + li {
+		  margin-left: 15px;
+		}
+		.topBar .dropdown-menu {
+		  right: 0;
+		  left: auto;
+		}
+		.topBar .dropdown-menu li {
+		  margin: 0;
+		}
+		@media (max-width: 767px) {
+		  .topBar .secNav {
+		    display: none;
+		  }
+		  .topBar .priNav {
+		    text-align: center;
+		    float: none !important;
+		  }
+		}
+		@media (min-width: 768px) {
+		  .topBar .secNav a {
+		    font-size: 12px;
+		  }
+		}
+		.navbar-header h1 {
+		  margin: 0;
+		}
+		.navbar-header .navbar-brand {
+		  float: none;
+		  height: 66px;
+		  display: block;
+		  text-align: center;
+		  text-indent: -9999px;
+		  background-size: 95px;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-image: url('http://projects.mostlikers.com/_images/logo.png');
+		}
+		.navbar-header .navbar-toggle {
+		  margin: 0;
+		  border: 0;
+		  padding-top: 0;
+		  padding-bottom: 0;
+		  line-height: 66px;
+		  padding-left: 15px;
+		  background-color: transparent !important;
+		}
+		.navbar-header .navbar-toggle:hover,
+		.navbar-header .navbar-toggle:focus,
+		.navbar-header .navbar-toggle:active {
+		  color: #FF5656;
+		}
+		.navbar-header .navbar-toggle.right {
+		  padding-right: 15px;
+		}
+		.navbar {
+		  border: 0;
+		  background-color: #FFF;
+		  border-top: 1px solid #F5F5F5;
+		}
+		.navbar #searchBar .searchBar {
+		  margin: 15px;
+		}
+		@media (min-width: 767px) {
+		  .navbar #searchBar {
+		    width: 60%;
+		    margin: 0 auto;
+		  }
+		  .navbar #searchBar .searchBar {
+		    margin: 15px 0;
+		  }
+		}
+		.navbar .cart {
+		  margin: 15px 0;
+		  font-size: 12px;
+		}
+		.navbar .cart .fa-shopping-bag {
+		  font-size: 30px;
+		  color: #555;
+		  vertical-align: middle;
+		}
+		.navbar #mainNav {
+		  padding: 0;
+		  border-style: solid;
+		  border-color: #F5F5F5;
+		  border-width: 1px 0 1px 0;
+		}
+		.navbar #mainNav a {
+		  color: #333;
+		}
+		.navbar #mainNav a:hover,
+		.navbar #mainNav a:focus,
+		.navbar #mainNav a:active {
+		  color: #FF5656;
+		}
+		.navbar #mainNav .active > a {
+		  color: #FF5656;
+		  background-color: transparent;
+		}
+		@media (min-width: 768px) {
+		  .navbar #mainNav .container {
+		    padding-left: 0;
+		    padding-right: 0;
+		  }
+		}
+	</style>
+</head>
+	<header>
+		<!-- topBar -->
+		<nav class="topBar">
+			<div class="container clearfix">
+				<ul class="list-inline pull-left priNav">
+					<li><a href="tel:+911234567890"><i class="fa fa-phone"></i> +91 1234 567890</a></li>
+					<li><a href="mailto:contact@yourcompany.com"><i class="fa fa-envelope"></i> contact@yourcompany.com</a></li>
+				</ul>
+				<ul class="list-inline pull-right secNav">
+					<li><a href=""><i class="fa fa-heart"></i> Wishlist</a></li>
+					<li><a href=""><i class="fa fa-check-square"></i> Checkout</a></li>
+					<li><a href=""><i class="fa fa-sign-in"></i> Sign In</a></li>
+					<li><a href=""><i class="fa fa-user-plus"></i> Sign Up</a></li>
+					<li class="dropdown">
+						<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="fasle"><i class="fa fa-user"></i> My Account</a>
+						<ul class="dropdown-menu">
+							<li><a href="">Your Profile</a></li>
+							<li><a href="">Edit Profile</a></li>
+							<li><a href="">Change Password</a></li>
+							<li><a href="">Order History</a></li>
+							<li><a href="">Sign Out</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav> <!-- /.topBar -->
+		<!-- brand & Search -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header clearfix">
+					<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#mainNav" aria-expanded="false"><i class="fa fa-bars"></i></button>
+					<button type="button" class="navbar-toggle collapsed right" data-toggle="collapse" data-target="#searchBar" aria-expanded="false"><i class="fa fa-search"></i></button>
+					<h1><a href="" class="navbar-brand">Your Company</a></h1>
+				</div>
+				<div class="navbar-right cart hidden-xs">
+					<i class="fa fa-shopping-bag pull-left"></i> My Cart <span class="text-pri">(0)</span> <br/> Total: <span class="text-pri"><i class="fa fa-inr"></i> 0</span>
+				</div>
+				<div class="collapse navbar-collapse" id="searchBar">
+					<div class="input-group searchBar">	
+						<div class="input-group-btn" id="dropDown">
+							<select name="" id="" class="form-control">
+								<option value="">All Categories</option>
+								<option value="">Categories</option>
+								<option value="">Categories</option>
+								<option value="">Categories</option>
+								<option value="">Categories</option>
+							</select>
+						</div>
+						<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">	
+						<span class="input-group-btn" id="basic-addon1"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar-collapse collapse" id="mainNav">
+				<div class="container">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href=""><i class="fa fa-home"></i></a></li>
+						<li><a href="">Shop</a></li>
+						<li><a href="">Saree</a></li>
+						<li><a href="">Dupattas</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href=""> Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav visible-xs">
+						<li><a href="">Wishlist</a></li>
+						<li><a href="">Cart</a></li>
+						<li><a href="">Sign In</a></li>
+						<li><a href="">Sign Up</a></li>
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="fasle">My Account</a>
+							<ul class="dropdown-menu">
+								<li><a href="">Your Profile</a></li>
+								<li><a href="">Edit Profile</a></li>
+								<li><a href="">Change Password</a></li>
+								<li><a href="">Order History</a></li>
+								<li><a href="">Sign Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</nav>
+	</header>
+<body>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

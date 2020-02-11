@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Simple Jumbotron with icons</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			* {
+			  outline: none;
+			}
+			a {
+			  color: #2196F3;
+			}
+			a:hover {
+			  color: #1976D2;
+			  text-decoration: none;
+			}
+			a:focus {
+			  color: #2196F3;
+			  text-decoration: none;
+			}
+			a:active {
+			  color: #1976D2;
+			  text-decoration: none;
+			}
+			body {
+			  font-family: 'Montserrat', sans-serif;
+			  background-color: #EEEEEE;
+			}
+			.jumbotron h2 {
+			  font-size: 24px;
+			  margin-bottom: 30px;
+			  font-weight: lighter;
+			}
+			@media (min-width: 767px) {
+			  .jumbotron h2 {
+			    font-size: 36px;
+			  }
+			}
+			.jumbotron p {
+			  font-size: 16px;
+			}
+			@media (min-width: 767px) {
+			  .jumbotron p {
+			    font-size: 21px;
+			  }
+			}
+			.jumbotron.heroism {
+			  padding: 60px 0;
+			  text-align: center;
+			}
+			.jumbotron.heroism h2 {
+			  text-transform: uppercase;
+			}
+			.jumbotron.heroism .list-inline {
+			  margin-bottom: 0;
+			}
+			.jumbotron.heroism .list-inline li {
+			  margin: 20px 0;
+			  padding: 0 !important;
+			}
+			.jumbotron.heroism .list-inline li a {
+			  color: #333;
+			  font-size: 18px;
+			  text-transform: uppercase;
+			}
+			.jumbotron.heroism .list-inline li a .fa {
+			  width: 80px;
+			  padding: 10px;
+			  height: 80px;
+			  display: block;
+			  line-height: 60px;
+			  margin-bottom: 10px;
+			  border-radius: 50%;
+			  -o-border-radius: 50%;
+			  -ms-border-radius: 50%;
+			  -moz-border-radius: 50%;
+			  -webkit-border-radius: 50%;
+			  background-color: #2196F3;
+			}
+			.jumbotron.heroism .list-inline li + li {
+			  margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="jumbotron heroism">
+			<div class="container">
+				<h2>The Bogorchid Solution</h2>
+				<p>Bogorchid is an intelligent machine that attracts, traps & kills mosquitoes naturally. The Bogochid extract in the machine uses multiple attracting factors to lure the mosquito then traps them in a suffocation chamber and kills them naturally. You can actually see and count the number of mosquitoes caught and killed.</p>
+				<ul class="list-inline">
+					<li><a href=""><i class="fa fa-star-o fa-2x"></i>Features</a></li>
+					<li><a href=""><i class="fa fa-gear fa-2x"></i>Specs</a></li>
+					<li><a href=""><i class="fa fa-shopping-cart fa-2x"></i>Buy</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</body>
+</html>

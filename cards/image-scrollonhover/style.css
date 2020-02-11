@@ -1,0 +1,25 @@
+.my-works .card {
+  max-width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+.my-works .card a {
+  display: block;
+}
+.my-works .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+}
+.my-works .card:hover img {
+  transform: translateY(calc(-100% + 300px));
+  -o-transform: translateY(calc(-100% + 300px));
+  -ms-transform: translateY(calc(-100% + 300px));
+  -moz-transform: translateY(calc(-100% + 300px));
+  -webkit-transform: translateY(calc(-100% + 300px));
+}

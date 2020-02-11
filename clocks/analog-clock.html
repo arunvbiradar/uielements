@@ -1,0 +1,145 @@
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet">
+<style>
+    :root{--size: 200px;}
+    body {
+        background-color: #263238;
+      font-family: 'Titillium Web', sans-serif;
+    }
+    #time {
+          color: #fff;
+          font-size: 24px;
+          font-weight: 600;
+          margin-top: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          text-shadow: 0 1px 0 #E5EBEB;
+    }
+
+    #clock{
+          margin: 0 auto;
+          margin-top: 10%;
+          border-radius: 50%;
+          position: relative;
+          width: var(--size);
+          height: var(--size);
+          background-color: #E5EBEB;
+          border: 10px solid #2E2E2E;
+          box-shadow: 0 2px 10px 0 #2E2E2E;
+    }
+
+    #hr-hand,#min-hand,#sec-hand {
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform-origin: 100% 100%;
+    }
+
+    #min-hand,#sec-hand {
+          width: 2px;
+          height: 70px;
+          margin-top: -70px;
+    }
+
+    #sec-hand {background-color: #2E2E2E;}
+    #min-hand {background-color: #FABE28;}
+    #hr-hand {
+          width: 2px;
+          height: 52px;
+          margin-top: -50px;
+          background-color: #73A6A2;
+    }
+
+    .num{
+          height: 100%;
+          position: absolute;
+          left: calc(50% - 0.5em);
+    }
+
+    .num div {
+          z-index: 1;
+          width: 1em;
+          color: #434F5B;
+          font-weight: 600;
+          line-height: 2em;
+          text-align: center;
+          position: relative;
+          vertical-align: middle;
+    }
+    .num:before {
+        top: 0;
+        left: 50%;
+        width: 1px;
+        content: '';
+        z-index: -1;
+        height: 80px;
+        position: absolute;
+        transform: inherit;
+        background-color: #fff;
+    }
+    .num1 {transform: rotate(30deg);}
+    .num1 div{transform: rotate(-30deg);}
+    .num2 {transform: rotate(60deg);}
+    .num2 div{transform: rotate(-60deg);}
+    .num3 {transform: rotate(90deg);}
+    .num3 div{transform: rotate(-90deg);}
+    .num4 {transform: rotate(120deg);}
+    .num4 div{transform: rotate(-120deg);}
+    .num5 {transform: rotate(150deg);}
+    .num5 div{transform: rotate(-150deg);}
+    .num6 {transform: rotate(180deg);}
+    .num6 div{transform: rotate(-180deg);}
+    .num7 {transform: rotate(210deg);}
+    .num7 div{transform: rotate(-210deg);}
+    .num8 {transform: rotate(240deg);}
+    .num8 div{transform: rotate(-240deg);}
+    .num9 {transform: rotate(270deg);}
+    .num9 div{transform: rotate(-270deg);}
+    .num10 {transform: rotate(300deg);}
+    .num10 div{transform: rotate(-300deg);}
+    .num11 {transform: rotate(330deg);}
+    .num11 div{transform: rotate(-330deg);}
+    .num12 {transform: rotate(0deg);}
+    .num12 div{transform: rotate(-0deg);}
+</style>
+<div id="clock">
+    <div class="num num1"><div>1</div></div>
+    <div class="num num2"><div>2</div></div>
+    <div class="num num3"><div>3</div></div>
+    <div class="num num4"><div>4</div></div>
+    <div class="num num5"><div>5</div></div>
+    <div class="num num6"><div>6</div></div>
+    <div class="num num7"><div>7</div></div>
+    <div class="num num8"><div>8</div></div>
+    <div class="num num9"><div>9</div></div>
+    <div class="num num10"><div>10</div></div>
+    <div class="num num11"><div>11</div></div>
+    <div class="num num12"><div>12</div></div>
+    <div id="hr-hand"></div>
+    <div id="min-hand"></div>
+    <div id="sec-hand"></div>
+</div>
+<div id="time"></div>
+
+<script>
+    setInterval(function(){
+        var date = new Date();
+        updateTime(date);
+        updateClock(date);
+    }, 1000);
+
+    function updateClock(date){
+        var secHand = document.getElementById("sec-hand").style;
+        var minHand = document.getElementById("min-hand").style;
+        var hrHand = document.getElementById("hr-hand").style;
+        
+        secHand.transform = "rotate(" + date.getSeconds() * 6 + "deg)";
+        minHand.transform = "rotate(" + date.getMinutes() * 6 + "deg)";
+        hrHand.transform = "rotate(" + (date.getHours() * 30 + date.getMinutes() * 0.5) + "deg)";
+    }
+
+    function updateTime(date){
+        var timeDiv = document.getElementById("time");
+        var time = "Time for Reference -- " + date.getHours() + " : " + date.getMinutes() + " : " + date.getSeconds();
+        timeDiv.innerHTML = time;
+    }
+</script>

@@ -1,0 +1,41 @@
+<link href="https://fonts.googleapis.com/css?family=Orbitron:900" rel="stylesheet">
+<style>
+	body {
+		color: #fff;
+		font-size: 100px;
+		font-weight: 900;
+		padding: 200px 0;
+		text-align: center;
+		letter-spacing: 15px;
+		background-color: #263238;
+		font-family: 'Orbitron', sans-serif;;
+	}
+</style>
+
+<div class="clock"></div>
+
+<script>
+	function clock() {
+		// We create a new Date object and assign it to a variable called "time"
+		var time = new Date(),
+	    
+	    // Access the "getHours" method
+	    hours = time.getHours(),
+	    
+	    // Access the "getMinutes" method
+	    minutes = time.getMinutes(),	    
+	    
+	    // Access the "getSeconds" method
+	    seconds = time.getSeconds();
+
+		document.querySelectorAll('.clock')[0].innerHTML = digi_time (hours) + ":" + digi_time (minutes) + ":" + digi_time (seconds);
+	  
+	  	function digi_time (arg) {
+		    if (arg < 10) {
+		      	arg = '0' + arg
+		    }
+		    return arg;
+	  	}
+	}
+	setInterval(clock, 1000);
+</script>

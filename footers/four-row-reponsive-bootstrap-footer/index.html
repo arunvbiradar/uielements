@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Four Row Responsive Bootstrap Footer</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Old+Standard+TT:400,700">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		* {
+		  outline: none;
+		}
+		a {
+		  color: #2196F3;
+		}
+		a:hover {
+		  color: #1976D2;
+		  text-decoration: none;
+		}
+		a:focus {
+		  color: #2196F3;
+		  text-decoration: none;
+		}
+		a:active {
+		  color: #1976D2;
+		  text-decoration: none;
+		}
+		body {
+		  font-family: 'Montserrat', sans-serif;
+		  background-color: #EEEEEE;
+		}
+		.text-pri {
+		  color: #2196F3;
+		}
+		.text-info {
+		  color: #673AB7;
+		}
+		.text-mute {
+		  color: #CFD8DC;
+		}
+		.text-light {
+		  color: #FAFAFA;
+		}
+		.text-danger {
+		  color: #f44336;
+		}
+		.text-success {
+		  color: #4CAF50;
+		}
+		.text-warning {
+		  color: #FF5722;
+		}
+		.social-links a {
+		  width: 30px;
+		  height: 30px;
+		  color: #FAFAFA;
+		  line-height: 30px;
+		  text-align: center;
+		  border-radius: 50%;
+		  -o-border-radius: 50%;
+		  -ms-border-radius: 50%;
+		  -moz-border-radius: 50%;
+		  -webkit-border-radius: 50%;
+		  display: inline-block;
+		}
+		.social-links a.facebook {
+		  background-color: #4D67A4;
+		}
+		.social-links a.facebook:hover {
+		  color: #4D67A4;
+		  background-color: #FAFAFA;
+		}
+		.social-links a.g-plus {
+		  background-color: #D84A36;
+		}
+		.social-links a.g-plus:hover {
+		  color: #D84A36;
+		  background-color: #FAFAFA;
+		}
+		.social-links a.twitter {
+		  background-color: #26A7E0;
+		}
+		.social-links a.twitter:hover {
+		  color: #26A7E0;
+		  background-color: #FAFAFA;
+		}
+		footer {
+		  color: #CFD8DC;
+		  background-color: #333;
+		}
+		footer ul,
+		footer ol {
+		  margin-bottom: 0;
+		}
+		footer ul .divider,
+		footer ol .divider {
+		  line-height: 10px;
+		}
+		@media (max-width: 767px) {
+		  footer [class^="col-"] + [class^="col-"] {
+		    margin-top: 30px;
+		  }
+		}
+		footer .floor1 {
+		  padding-top: 20px;
+		  padding-bottom: 20px;
+		}
+		footer .floor2 {
+		  padding-top: 20px;
+		  padding-bottom: 20px;
+		  background-color: #444;
+		}
+		@media (max-width: 991px) {
+		  footer .floor2 [class^="col-"] + [class^="col-"] {
+		    margin-top: 20px;
+		  }
+		  footer .floor2 .list-unstyled li {
+		    display: inline-block;
+		  }
+		  footer .floor2 .list-unstyled li + li {
+		    margin-left: 10px;
+		  }
+		}
+		footer .payment {
+		  padding-top: 20px;
+		  text-align: center;
+		  padding-bottom: 20px;
+		}
+		footer .payment img + img {
+		  margin-left: 10px;
+		}
+		footer h3 {
+		  color: #2196F3;
+		  margin: 0 0 5px;
+		  font-size: 18px;
+		}
+		footer p + p {
+		  margin-top: 10px;
+		}
+		footer ul > li > a {
+		  color: #CFD8DC;
+		}
+		footer .copyright {
+		  line-height: 40px;
+		  text-align: center;
+		  background-color: #252525;
+		}
+	</style>
+</head>
+<footer>
+	<div class="floor1">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<h3>Your Company</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga iure non voluptate inventore, voluptates, cum, et aspernatur optio, officia nesciunt necessitatibus saepe ex minus ipsum voluptatum sed repellendus a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nam, cumque iure ipsa beatae at cum rerum ad sit, architecto veniam delectus illum tempore animi eligendi temporibus atque magnam, consequuntur! Beatae...</p>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3">
+					<h3>Information</h3>
+					<ul class="list-unstyled">
+						<li><a href="">About Us</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Press</a></li>
+						<li><a href="">Terms & Conditions</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Site Map</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3">
+					<h3>Suppot</h3>
+					<ul class="list-unstyled">
+						<li><a href="">Return Policy</a></li>
+						<li><a href="">Shipping Policy</a></li>
+						<li><a href="">Sample Policy</a></li>
+						<li><a href="">Leave a Feedback</a></li>
+						<li class="divider">&nbsp;</li>
+						<li><a href="tel:+919108568400">+919108568400</a></li>
+						<li><a href="mailto:contact@mytyles.com">contact@mytyles.com</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-3 col-sm-3">
+					<h3>Follow us</h3>
+					<div class="social-links">
+						<ul class="list-inline mrg-bz">
+							<li><a href="" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="" class="g-plus"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="" class="twitter"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="floor2">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<h3>Application</h3>
+					<ul class="list-unstyled">
+						<li><a href="">Living Room</a></li>
+						<li><a href="">Bathroom</a></li>
+						<li><a href="">Bedroom</a></li>
+						<li><a href="">Exterior</a></li>
+						<li><a href="">Kitchen</a></li>
+						<li><a href="">Office</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<h3>Material Type</h3>
+					<ul class="list-unstyled">
+						<li><a href="">Vitrified</a></li>
+						<li><a href="">Ceramic</a></li>
+						<li><a href="">Porcelain</a></li>
+						<li><a href="">Natural Stone</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<h3>Finish</h3>
+					<ul class="list-unstyled">
+						<li><a href="">Polished</a></li>
+						<li><a href="">Satin</a></li>
+						<li><a href="">Rustic</a></li>
+						<li><a href="">Wooden</a></li>
+						<li><a href="">Matt</a></li>
+						<li><a href="">Glossy</a></li>
+						<li><a href="">Anti Skid</a></li>
+						<li><a href="">Rock</a></li>
+						<li><a href="">Random Base Tile</a></li>
+						<li><a href="">Stone</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-12">
+					<h3>Brands</h3>
+					<ul class="list-unstyled">
+						<li><a href="">Kajaria</a></li>
+						<li><a href="">RAK</a></li>
+						<li><a href="">Gujarat</a></li>
+						<li><a href="">Orient Bell</a></li>
+						<li><a href="">NITCO</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="payment">
+		<img src="http://projects.mostlikers.com/_images/payumoney.png" alt="Pay u Money" height="20" />
+		<img src="http://projects.mostlikers.com/_images/visa.png" alt="Visa" height="20" />
+		<img src="http://projects.mostlikers.com/_images/mastercard.png" alt="Master Card" height="20" />
+		<img src="http://projects.mostlikers.com/_images/maestro.png" alt="Maestro Card" height="20" />
+		<img src="http://projects.mostlikers.com/_images/americanExpress.png" alt="American Express" height="20" />
+		<img src="http://projects.mostlikers.com/_images/netBanking.png" alt="Net Banking" height="20" />
+	</div>
+	<div class="copyright">&copy; 2016. Your Company. All Right Reserved</div>
+</footer>
+<body>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

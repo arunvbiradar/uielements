@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Simple Responsive Bootstrap Header</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<style>
+		* {
+		  outline: none;
+		}
+		a {
+		  color: #2196F3;
+		}
+		a:hover {
+		  color: #1976D2;
+		  text-decoration: none;
+		}
+		a:focus {
+		  color: #2196F3;
+		  text-decoration: none;
+		}
+		a:active {
+		  color: #1976D2;
+		  text-decoration: none;
+		}
+		body {
+		  font-family: 'Montserrat', sans-serif;
+		  background-color: #EEEEEE;
+		}
+		.navbar {
+		  border: 0;
+		  background-color: #FAFAFA;
+		  box-shadow: 0 0 2px 0 #E0E0E0;
+		  -o-box-shadow: 0 0 2px 0 #E0E0E0;
+		  -ms-box-shadow: 0 0 2px 0 #E0E0E0;
+		  -moz-box-shadow: 0 0 2px 0 #E0E0E0;
+		  -webkit-box-shadow: 0 0 2px 0 #E0E0E0;
+		}
+		.navbar h1 {
+		  margin: 0;
+		  line-height: 16px;
+		  display: inline-block;
+		}
+		.navbar .navbar-brand {
+		  float: none;
+		  width: 95px;
+		  height: 50px;
+		  padding: 5px 0;
+		  text-indent: -9999px;
+		  display: inline-block;
+		  text-transform: uppercase;
+		  background-size: 100% 40px;
+		  background-position: center;
+		  background-repeat: no-repeat;
+		  background-image: url('http://projects.mostlikers.com/_images/logo.png');
+		}
+		@media (min-width: 768px) {
+		  .navbar .navbar-brand {
+		    margin-left: 0 !important;
+		  }
+		}
+		.navbar .navbar-header {
+		  margin-left: 0;
+		  margin-right: 0;
+		  text-align: center;
+		}
+		.navbar .navbar-header .navbar-nav {
+		  margin-top: 5px;
+		  margin-bottom: 5px;
+		}
+		.navbar .navbar-toggle {
+		  border: 0;
+		  float: left;
+		  margin-right: 0;
+		  padding-left: 0;
+		}
+		.navbar .navbar-toggle:hover,
+		.navbar .navbar-toggle:focus,
+		.navbar .navbar-toggle:active {
+		  color: #2196F3;
+		  background-color: transparent;
+		}
+		.navbar .navbar-toggle .icon-bar {
+		  width: 18px;
+		}
+		.navbar .navbar-nav > li > a {
+		  color: #333;
+		}
+		.navbar .navbar-nav > li > a:hover,
+		.navbar .navbar-nav > li > a:focus,
+		.navbar .navbar-nav > li > a:active {
+		  color: #2196F3;
+		}
+	</style>
+</head>
+	<header>
+		<nav class="navbar navbar-default">
+			<div class="container">
+		    	<div class="navbar-header" id="branding">
+		      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+					<h1><a class="navbar-brand" href="#">7trace</a></h1>
+		      		<ul class="nav navbar-nav pull-right visible-xs">
+						<li class="smNextLogo"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+		      		</ul>
+		    	</div>
+		    	<!-- nav links -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      		<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Specification</a></li>
+						<li><a href="#">Review</a></li>
+						<li><a href="#">Buy</a></li>
+						<li class="smNextLogo"><a href="#">Contact</a></li>
+						<li class="hidden-xs smNextLogo"><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+		      		</ul>
+		    	</div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+<body>
+	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

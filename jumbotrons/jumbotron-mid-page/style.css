@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+a.btn,
+button.btn {
+  color: #c6c9d8;
+  font-size: 16px;
+  transition: 0.3s;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 15px 40px;
+  letter-spacing: 2px;
+  display: inline-block;
+  -webkit-transition: 0.3s;
+  border: 2px solid #b1b4c1;
+  text-transform: uppercase;
+}
+a.btn.btn-solid,
+button.btn.btn-solid {
+  color: #fff;
+  background: #f9004d;
+  border: 2px solid #f9004d;
+}
+a.btn.btn-solid.btn-outline:hover,
+button.btn.btn-solid.btn-outline:hover {
+  color: #fff;
+  border-color: #f9004d;
+  background-color: #f9004d;
+}
+a.btn.btn-outline,
+button.btn.btn-outline {
+  border-color: #b1b4c1;
+  background-color: transparent;
+}
+a.btn.btn-outline:hover,
+button.btn.btn-outline:hover {
+  border-color: #f9004d;
+}
+a.btn:hover,
+button.btn:hover {
+  color: #f9004d;
+  background: transparent;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.theme-gradient {
+  background: #f81f01;
+  background: -webkit-linear-gradient(145deg, #f81f01, #ee076e);
+  background: -webkit-linear-gradient(305deg, #f81f01, #ee076e);
+  background: linear-gradient(145deg, #f81f01, #ee076e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f81f01", endColorstr="#ee076e", GradientType=1);
+}
+.theme-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.rn-finding-us-area .inner {
+  position: relative;
+  padding-left: 240px;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+.rn-finding-us-area .inner .content-wrapper .content {
+  background: #272527;
+  padding: 120px 100px;
+  position: relative;
+  z-index: 2;
+  width: 800px;
+  border-radius: 10px;
+}
+.rn-finding-us-area .inner .content-wrapper .content h4 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.rn-finding-us-area .inner .content-wrapper .content p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 41px;
+  padding-right: 10%;
+}
+.rn-finding-us-area .inner .thumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+.rn-finding-us-area .inner .thumbnail img {
+  border-radius: 10px;
+}
+.thumbnail img {
+  border-radius: 5px;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.1);
+}

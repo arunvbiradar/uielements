@@ -1,0 +1,9 @@
+.stars {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.38);
+}
+body {
+  overflow: hidden;
+  position: relative;
+  background-color: #050d13;
+}
