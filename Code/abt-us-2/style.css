@@ -1,0 +1,97 @@
+/*! CSS Used from: http://mutationmedia.net/FOXERESTO/css/bootstrap.css ; media=all */
+@media all{
+*,*::before,*::after{box-sizing:border-box;}
+section{display:block;}
+h2,h4{margin-top:0;margin-bottom:0.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+a{color:#b5a46d;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;position:relative;}
+a:hover{color:#a29260;}
+img{vertical-align:middle;border-style:none;}
+h2,h4,.h3,.h6{margin-bottom:.5rem;font-family:inherit;font-weight:400;line-height:1.5;color:#111111;}
+h2{font-size:2rem;}
+.h3{font-size:1.75rem;}
+h4{font-size:1.5rem;}
+.h6{font-size:1rem;font-weight:700;letter-spacing:0.0625rem;}
+.img-fluid{max-width:100%;height:auto;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width: 576px){
+.container{max-width:540px;}
+}
+@media (min-width: 768px){
+.container{max-width:720px;}
+}
+@media (min-width: 992px){
+.container{max-width:960px;}
+}
+@media (min-width: 1200px){
+.container{max-width:1140px;}
+}
+.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-sm-5,.col-sm-6,.col-lg-5,.col-lg-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width: 576px){
+.col-sm-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}
+.col-sm-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+.offset-sm-1{margin-left:8.333333%;}
+}
+@media (min-width: 992px){
+.col-lg-5{-webkit-box-flex:0;-ms-flex:0 0 41.666667%;flex:0 0 41.666667%;max-width:41.666667%;}
+.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+.media{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;}
+.media-body{-webkit-box-flex:1;-ms-flex:1;flex:1;}
+.rounded-circle{border-radius:50%!important;}
+.justify-content-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important;}
+.align-items-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important;}
+.align-self-end{-ms-flex-item-align:end!important;align-self:flex-end!important;}
+.position-relative{position:relative!important;}
+.w-100{width:100%!important;}
+.mb-0{margin-bottom:0!important;}
+.mb-2{margin-bottom:0.5rem!important;}
+.mr-3{margin-right:1rem!important;}
+.mb-3{margin-bottom:1rem!important;}
+.mb-6{margin-bottom:3rem!important;}
+@media (min-width: 992px){
+.mb-lg-0{margin-bottom:0!important;}
+}
+@media print{
+*,*::before,*::after{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+p,h2{orphans:3;widows:3;}
+h2{page-break-after:avoid;}
+.container{min-width:992px!important;}
+}
+}
+/*! CSS Used from: http://mutationmedia.net/FOXERESTO/css/main.css ; media=all */
+@media all{
+.card-gutters > [class*="col-"]{padding-right:4px;padding-left:4px;}
+.card-gutters{margin-right:-4px;margin-left:-4px;}
+.hover-effect,.hover-effect img{border-radius:0;}
+::-moz-selection{background:#b5a46d;color:#ffffff;}
+.avatar-md{width:4rem;height:4rem;}
+a,::before{transition:all 0.3s ease 0s;-webkit-transition:all 0.3s ease 0s;-moz-transition:all 0.3s ease 0s;-ms-transition:all 0.3s ease 0s;-o-transition:all 0.3s ease 0s;}
+.label-title{display:inline-block;font-weight:400;font-size:0.75rem;padding:0.5rem 1rem;border-radius:6.1875rem;color:#b5a46d;background-color:rgba(181, 164, 109, 0.1);}
+.hover-effect{position:relative;display:block;overflow:hidden;}
+.hover-effect-container{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.hover-effect-icon-inner{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+.hover-effect:hover .hover-effect-icon{opacity:1;-webkit-transform:scale(1);transform:scale(1);}
+.hover-effect-icon:hover{color:#fff;}
+.hover-effect-icon{display:inline-block;vertical-align:middle;text-align:center;color:#fff;background-color:#b5a46d;width:2.25rem;height:2.25rem;font-size:0.75rem;border-radius:50%;opacity:0;transition:0.4s;-webkit-transform:scale(0.7);transform:scale(0.7);}
+section{position:relative;overflow:hidden;width:100%;}
+.spacer-double-lg{padding-top:8rem;padding-bottom:8rem;}
+.font-alt{font-family:'Lustria', serif;}
+@media (max-width: 575px){
+h2{font-size:1.875rem;}
+}
+}
+/*! CSS Used from: http://mutationmedia.net/FOXERESTO/css/fonts.css ; media=all */
+@media all{
+.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-plus:before{content:"\f067";}
+.fa{font-family:"Font Awesome 5 Free";}
+.fa{font-weight:900;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Lustria';font-style:normal;font-weight:400;src:local('Lustria'), local('Lustria-Regular'), url(https://fonts.gstatic.com/s/lustria/v7/9oRONYodvDEyjuhOnC8zMw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;src:url(http://mutationmedia.net/FOXERESTO/webfonts/fa-regular-400.eot);src:url(http://mutationmedia.net/FOXERESTO/webfonts/fa-regular-400.eot#iefix) format("embedded-opentype"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-regular-400.woff2) format("woff2"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-regular-400.woff) format("woff"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-regular-400.ttf) format("truetype"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-regular-400.svg#fontawesome) format("svg");}
+@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;src:url(http://mutationmedia.net/FOXERESTO/webfonts/fa-solid-900.eot);src:url(http://mutationmedia.net/FOXERESTO/webfonts/fa-solid-900.eot#iefix) format("embedded-opentype"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-solid-900.woff2) format("woff2"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-solid-900.woff) format("woff"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-solid-900.ttf) format("truetype"),url(http://mutationmedia.net/FOXERESTO/webfonts/fa-solid-900.svg#fontawesome) format("svg");}

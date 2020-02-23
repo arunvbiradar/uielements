@@ -1,0 +1,87 @@
+/* bootstrap.min.css */
+*,::after,::before{box-sizing:border-box;}
+ul{margin-top:0;margin-bottom:1rem;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1200px;}
+}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-lg-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:992px){
+.col-lg-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+}
+.text-center{text-align:center!important;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+.container{min-width:992px!important;}
+}
+/* css */
+.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}
+.fa-dribbble:before{content:"\f17d";}
+.fa-facebook:before{content:"\f09a";}
+.fa-instagram:before{content:"\f16d";}
+.fa-pinterest:before{content:"\f0d2";}
+.fa-twitter:before{content:"\f099";}
+.fab{font-family:'Font Awesome 5 Brands';}
+
+[class*=" icon-"]:before{font-family:"linea-basic-10"!important;font-style:normal!important;font-weight:normal!important;font-variant:normal!important;text-transform:none!important;speak:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+
+@media only screen and (max-width: 575px){
+.container{max-width:450px;}
+}
+@media only screen and (max-width: 479px){
+.container{max-width:320px;}
+}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+a{color:#ca3c08;text-decoration:none;}
+a:visited{color:#ac0404;}
+a:focus{outline:thin dotted;}
+a:active,a:hover{color:#ea9629;outline:0;}
+a:hover{text-decoration:underline;}
+ul{margin:16px 0;padding:0 0 0 40px;}
+ul{list-style-type:square;}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;}
+a{-webkit-transition:all 0.4s ease-in-out 0s;-o-transition:all 0.4s ease-in-out 0s;transition:all 0.4s ease-in-out 0s;}
+ul{margin:0;margin-bottom:15px;}
+a:hover,a:focus,a:active{text-decoration:none;outline:none;}
+a:visited{color:inherit;}
+.move-up{-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);}
+.move-up.animate{-webkit-transform:translateY(100px);-ms-transform:translateY(100px);transform:translateY(100px);-webkit-animation:moveVertical .65s ease forwards;animation:moveVertical .65s ease forwards;}
+.bg_color--2{background:#0038E3;}
+.ptb--80{padding:80px 0;}
+@media only screen and (max-width: 767px){
+.ptb-sm--60{padding:60px 0;}
+}
+.social-icon{padding:0;margin:0 -15px;}
+.social-icon li{display:inline-block;}
+.social-icon li a{padding:5px 15px;color:#fff;-webkit-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);-o-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);}
+.social-icon.icon-size-medium li a{font-size:20px;}
+.social-icon.style-solid-rounded-icon{margin:-10px;}
+.social-icon.style-solid-rounded-icon li{margin:10px;}
+@media only screen and (max-width: 767px){
+.social-icon.style-solid-rounded-icon li{margin:6px;}
+}
+.social-icon.style-solid-rounded-icon li a{font-size:20px;display:block;text-align:center;height:55px;line-height:42px;width:55px;color:#fff;border:2px solid rgba(0, 0, 0, 0.21);border-radius:50%;position:relative;border-color:transparent;background-color:rgba(255, 255, 255, 0.18);-webkit-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);-o-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);}
+.social-icon.style-solid-rounded-icon li a:hover{border-color:transparent;background-color:#fff;color:#222222;}
+a{-webkit-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);-o-transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);transition:all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);color:#fff;}
+a:hover{color:rgba(255, 255, 255, 0.5);}
+a{color:#267481;text-decoration:none;}
+body.template-color-1 .bg_color--2{background:#0038E3;}
+/*! CSS Used keyframes */
+@-webkit-keyframes moveVertical{to{opacity:1;-webkit-transform:translateY(0);}}
+@keyframes moveVertical{to{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;src:url("http://demo.hasthemes.com/brook-preview/brook/fonts/fontawesome-free/webfonts/fa-brands-400.eot");src:url("http://demo.hasthemes.com/brook-preview/brook/fonts/fontawesome-free/webfonts/fa-brands-400.eot#iefix") format("embedded-opentype"), url("http://demo.hasthemes.com/brook-preview/brook/fonts/fontawesome-free/webfonts/fa-brands-400.woff2") format("woff2"), url("http://demo.hasthemes.com/brook-preview/brook/fonts/fontawesome-free/webfonts/fa-brands-400.woff") format("woff"), url("http://demo.hasthemes.com/brook-preview/brook/fonts/fontawesome-free/webfonts/fa-brands-400.ttf") format("truetype"), url("http://demo.hasthemes.com/brook-preview/brook/fonts/fontawesome-free/webfonts/fa-brands-400.svg#fontawesome") format("svg");}
+@font-face{font-family:"linea-basic-10";src:url("http://demo.hasthemes.com/brook-preview/brook/fonts/linea-basic-10.eot");src:url("http://demo.hasthemes.com/brook-preview/brook/fonts/linea-basic-10.eot#iefix") format("embedded-opentype"),          url("http://demo.hasthemes.com/brook-preview/brook/fonts/linea-basic-10.woff") format("woff"),          url("http://demo.hasthemes.com/brook-preview/brook/fonts/linea-basic-10.ttf") format("truetype"),          url("http://demo.hasthemes.com/brook-preview/brook/fonts/linea-basic-10.svg#linea-basic-10") format("svg");font-weight:normal;font-style:normal;}

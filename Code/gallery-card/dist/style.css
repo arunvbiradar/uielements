@@ -1,0 +1,57 @@
+/*! CSS Used from: https://expert-themes.com/html/eventrox/css/bootstrap.css */
+*,::after,::before{box-sizing:border-box;}
+figure{display:block;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+figure{margin:0 0 1rem;}
+img{vertical-align:middle;border-style:none;}
+.col-lg-4,.col-md-6,.col-sm-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:576px){
+.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+}
+@media (min-width:768px){
+.col-md-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%;}
+}
+@media (min-width:992px){
+.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+}
+/*! CSS Used from: https://expert-themes.com/html/eventrox/css/style.css */
+/*! @import https://expert-themes.com/html/eventrox/css/fontawesome-all.css */
+.fa{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;}
+.fa-expand-arrows-alt:before{content:"\f31e";}
+.fa{font-family:'Font Awesome 5 Free';font-weight:900;}
+/*! end @import */
+/*! @import https://expert-themes.com/html/eventrox/css/animate.css */
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn;}
+/*! end @import */
+*{margin:0px;padding:0px;border:none;outline:none;}
+a{text-decoration:none;cursor:pointer;color:#f20487;}
+a:hover,a:focus,a:visited{text-decoration:none;outline:none!important;}
+img{display:inline-block;max-width:100%;}
+::-webkit-input-placeholder{color:inherit;}
+::-moz-input-placeholder{color:inherit;}
+::-ms-input-placeholder{color:inherit;}
+::selection{background:#ec167f;color:#ffffff;}
+::-moz-selection{background:#ec167f;color:#ffffff;}
+::-webkit-selection{background:#ec167f;color:#ffffff;}
+img{display:inline-block;max-width:100%;height:auto;}
+.gallery-item{position:relative;margin-bottom:30px;}
+.gallery-item .image-box{position:relative;box-shadow:0 0px 30px rgba(8,13,62,.10);overflow:hidden;}
+.gallery-item .image-box .image{position:relative;margin-bottom:0;}
+.gallery-item .image-box .image img{display:block;width:100%;height:auto;}
+.gallery-item .overlay-box{position:absolute;left:0;top:0;height:100%;width:100%;text-align:center;content:"";opacity:0;background-color:#1d95d2;-webkit-transform:scale(.5);-moz-transform:scale(.5);-ms-transform:scale(.5);-o-transform:scale(.5);transform:scale(.5);border-radius:500px;-webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;-ms-transition:all 300ms ease;-o-transition:all 300ms ease;transition:all 300ms ease;}
+.gallery-item .image-box:hover .overlay-box{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);opacity:.9;border-radius:0px;}
+.gallery-item .overlay-box a{position:absolute;left:50%;top:50%;margin-top:-29px;margin-left:-29px;}
+.gallery-item .overlay-box a span{display:block;height:58px;width:58px;background-color:#ec167f;color:#ffffff;border-radius:50%;font-weight:700;font-size:18px;line-height:58px;}
+/*! CSS Used keyframes */
+@-webkit-keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+@keyframes fadeIn{0%{opacity:0;}100%{opacity:1;}}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:400;src:url("https://expert-themes.com/html/eventrox/fonts/fa-regular-400.eot");src:url("https://expert-themes.com/html/eventrox/fonts/fa-regular-400.eot#iefix") format("embedded-opentype"), url("https://expert-themes.com/html/eventrox/fonts/fa-regular-400.woff2") format("woff2"), url("https://expert-themes.com/html/eventrox/fonts/fa-regular-400.woff") format("woff"), url("https://expert-themes.com/html/eventrox/fonts/fa-regular-400.ttf") format("truetype"), url("https://expert-themes.com/html/eventrox/fonts/fa-regular-400.svg#fontawesome") format("svg");}
+@font-face{font-family:'Font Awesome 5 Free';font-style:normal;font-weight:900;src:url("https://expert-themes.com/html/eventrox/fonts/fa-solid-900.eot");src:url("https://expert-themes.com/html/eventrox/fonts/fa-solid-900.eot#iefix") format("embedded-opentype"), url("https://expert-themes.com/html/eventrox/fonts/fa-solid-900.woff2") format("woff2"), url("https://expert-themes.com/html/eventrox/fonts/fa-solid-900.woff") format("woff"), url("https://expert-themes.com/html/eventrox/fonts/fa-solid-900.ttf") format("truetype"), url("https://expert-themes.com/html/eventrox/fonts/fa-solid-900.svg#fontawesome") format("svg");}

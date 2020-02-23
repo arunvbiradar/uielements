@@ -1,0 +1,115 @@
+/*! CSS Used from: https://expert-themes.com/html/eventrox/css/bootstrap.css */
+*,::after,::before{box-sizing:border-box;}
+figure,section{display:block;}
+h3,h4,h5{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+ul{margin-top:0;margin-bottom:1rem;}
+a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects;}
+a:hover{color:#0056b3;text-decoration:underline;}
+figure{margin:0 0 1rem;}
+img{vertical-align:middle;border-style:none;}
+h3,h4,h5{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
+h3{font-size:1.75rem;}
+h4{font-size:1.5rem;}
+h5{font-size:1.25rem;}
+.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
+.col-lg-4,.col-lg-8,.col-md-12,.col-sm-12{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;}
+@media (min-width:576px){
+.col-sm-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+}
+@media (min-width:768px){
+.col-md-12{-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%;}
+}
+@media (min-width:992px){
+.col-lg-4{-ms-flex:0 0 33.333333%;flex:0 0 33.333333%;max-width:33.333333%;}
+.col-lg-8{-ms-flex:0 0 66.666667%;flex:0 0 66.666667%;max-width:66.666667%;}
+}
+.text-center{text-align:center!important;}
+@media print{
+*,::after,::before{text-shadow:none!important;box-shadow:none!important;}
+a:not(.btn){text-decoration:underline;}
+img{page-break-inside:avoid;}
+h3,p{orphans:3;widows:3;}
+h3{page-break-after:avoid;}
+}
+/*! CSS Used from: https://expert-themes.com/html/eventrox/css/style.css */
+/*! @import https://expert-themes.com/html/eventrox/css/fontawesome-all.css */
+.fab{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;}
+.fa-facebook-f:before{content:"\f39e";}
+.fa-google-plus-g:before{content:"\f0d5";}
+.fa-linkedin-in:before{content:"\f0e1";}
+.fa-skype:before{content:"\f17e";}
+.fa-twitter:before{content:"\f099";}
+.fab{font-family:'Font Awesome 5 Brands';}
+/*! end @import */
+*{margin:0px;padding:0px;border:none;outline:none;}
+a{text-decoration:none;cursor:pointer;color:#f20487;}
+a:hover,a:focus,a:visited{text-decoration:none;outline:none!important;}
+h3,h4,h5{position:relative;font-weight:normal;margin:0px;background:none;line-height:1.6em;font-family:'Ubuntu', sans-serif;}
+p{position:relative;font-size:16px;line-height:26px;color:#888888;font-weight:400;}
+.auto-container{position:static;max-width:1200px;padding:0px 15px;margin:0 auto;}
+ul,li{list-style:none;padding:0px;margin:0px;}
+img{display:inline-block;max-width:100%;}
+::-webkit-input-placeholder{color:inherit;}
+::-moz-input-placeholder{color:inherit;}
+::-ms-input-placeholder{color:inherit;}
+::selection{background:#ec167f;color:#ffffff;}
+::-moz-selection{background:#ec167f;color:#ffffff;}
+::-webkit-selection{background:#ec167f;color:#ffffff;}
+.social-icon-two{position:relative;display:block;}
+.social-icon-two li{position:relative;display:inline-block;margin-right:8px;margin-bottom:10px;}
+.social-icon-two li a .fab{position:relative;display:block;height:40px;width:40px;line-height:40px;text-align:center;font-size:16px;border:1px solid #dddddd;background-color:#ffffff;-webkit-transition:all 300ms ease;-moz-transition:all 300ms ease;-ms-transition:all 300ms ease;-o-transition:all 300ms ease;transition:all 300ms ease;}
+.social-icon-two li a:hover .fab{color:#ffffff;background-color:#d24c59;}
+img{display:inline-block;max-width:100%;height:auto;}
+.speaker-detail{position:relative;padding:120px 0 70px;}
+.speaker-detail .image-column{position:relative;margin-bottom:50px;}
+.speaker-detail .image-column .image-box{position:relative;padding-right:20px;}
+.speaker-detail .image-column .image{position:relative;margin-bottom:30px;overflow:hidden;border:10px solid #ffffff;box-shadow:0 0 30px rgba(0,0,0,0.10);}
+.speaker-detail .image-column .image img{display:block;width:100%;}
+.speaker-detail .info-column{position:relative;}
+.speaker-detail .info-column .inner-column{position:relative;}
+.speaker-detail .info-column h3{position:relative;display:block;font-size:40px;line-height:1em;font-weight:600;margin-bottom:20px;color:#101130;}
+.speaker-detail .info-column h4{position:relative;display:block;font-size:24px;line-height:1em;font-weight:500;margin-bottom:20px;color:#222222;}
+.speaker-detail .info-column h5{position:relative;display:block;font-size:18px;line-height:1em;font-weight:500;margin-bottom:10px;color:rgba(68,16,102,1);}
+.speaker-detail .info-column .text-box{position:relative;}
+.speaker-detail .info-column p{position:relative;font-size:16px;line-height:1.6em;color:#888888;margin-bottom:30px;}
+.speaker-detail .speaker-session-info{position:relative;margin-bottom:30px;}
+.speaker-detail .speaker-session-info p{margin-bottom:0;color:rgb(247,0,104);}
+.social-icon-colored .fa-facebook-f{color:#3C599F;}
+.social-icon-colored .fa-google-plus-g{color:#CF3D2E;}
+.social-icon-colored .fa-linkedin-in{color:#0085AE;}
+.social-icon-colored .fa-skype{color:#01AEF2;}
+.social-icon-colored .fa-twitter{color:#32CCFE;}
+.social-icon-colored li a:hover .fa-facebook-f{background-color:#3C599F;}
+.social-icon-colored li a:hover .fa-google-plus-g{background-color:#CF3D2E;}
+.social-icon-colored li a:hover .fa-linkedin-in{background-color:#0085AE;}
+.social-icon-colored li a:hover .fa-skype{background-color:#01AEF2;}
+.social-icon-colored li a:hover .fa-twitter{background-color:#32CCFE;}
+.social-icon-colored li a:hover .fab{color:#ffffff;}
+/*! CSS Used from: https://expert-themes.com/html/eventrox/css/responsive.css */
+@media only screen and (max-width: 1023px){
+.speaker-detail .info-column .inner-column{text-align:center;}
+}
+@media only screen and (max-width: 767px){
+.speaker-detail{padding:70px 0 20px;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:normal;src:url("https://expert-themes.com/html/eventrox/fonts/fa-brands-400.eot");src:url("https://expert-themes.com/html/eventrox/fonts/fa-brands-400.eot#iefix") format("embedded-opentype"), url("https://expert-themes.com/html/eventrox/fonts/fa-brands-400.woff2") format("woff2"), url("https://expert-themes.com/html/eventrox/fonts/fa-brands-400.woff") format("woff"), url("https://expert-themes.com/html/eventrox/fonts/fa-brands-400.ttf") format("truetype"), url("https://expert-themes.com/html/eventrox/fonts/fa-brands-400.svg#fontawesome") format("svg");}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKcg72j00.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKew72j00.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKcw72j00.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfA72j00.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKcQ72j00.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:400;font-display:swap;src:local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw72.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:500;font-display:swap;src:local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jvWyNL4U.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:500;font-display:swap;src:local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jtGyNL4U.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:500;font-display:swap;src:local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jvGyNL4U.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:500;font-display:swap;src:local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3js2yNL4U.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:500;font-display:swap;src:local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jvmyNL4U.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:500;font-display:swap;src:local('Ubuntu Medium'), local('Ubuntu-Medium'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;font-display:swap;src:local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjvWyNL4U.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;font-display:swap;src:local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjtGyNL4U.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;font-display:swap;src:local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjvGyNL4U.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;font-display:swap;src:local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjs2yNL4U.woff2) format('woff2');unicode-range:U+0370-03FF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;font-display:swap;src:local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjvmyNL4U.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+@font-face{font-family:'Ubuntu';font-style:normal;font-weight:700;font-display:swap;src:local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjsGyN.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}

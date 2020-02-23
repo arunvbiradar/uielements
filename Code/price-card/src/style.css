@@ -1,0 +1,65 @@
+/*! CSS Used from: https://dessign.net/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/frontend_blocks.css?ver=1.17.1 ; media=all */
+@media all{
+.ugb-pricing-box{margin-top:1.5em;margin-bottom:1.5em;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-gap:35px;}
+.ugb-pricing-box>*{margin-top:0!important;margin-bottom:1rem!important;}
+.ugb-pricing-box>:first-child{margin-top:0!important;}
+.ugb-pricing-box>:last-child{margin-bottom:0!important;}
+.ugb-pricing-box.ugb-pricing-box--columns-1{grid-template-columns:minmax(0,1fr);}
+.ugb-pricing-box__item{box-shadow:0 5px 5px 0 rgba(18,63,82,.035),0 0 0 1px rgba(176,181,193,.2);background-color:#fff;border-radius:12px;overflow:hidden;padding:60px 35px;--box-padding-vert:60px;--box-padding-hori:35px;margin-bottom:0!important;text-align:center;flex:1;}
+.ugb-pricing-box__item .ugb-pricing-box__price{font-size:3.5em;line-height:100%!important;}
+.ugb-pricing-box__price-wrapper{margin-top:1.5em;margin-bottom:1.5em;}
+.ugb-pricing-box__price-wrapper>*{margin-top:0!important;margin-bottom:1rem!important;}
+.ugb-pricing-box__price-wrapper>:first-child{margin-top:0!important;}
+.ugb-pricing-box__price-wrapper>:last-child{margin-bottom:0!important;}
+.ugb-pricing-box__price-line{display:flex;justify-content:center;}
+.ugb-pricing-box__price-prefix{align-self:flex-start;font-size:1.2em;}
+.ugb-pricing-box__price-suffix{align-self:flex-end;font-size:1.5em;}
+.ugb-pricing-box__price{font-size:3.5em;line-height:100%!important;}
+.ugb-pricing-box__subprice{font-size:.75em;opacity:.3;text-transform:uppercase;line-height:100%!important;}
+.ugb-pricing-box--design-basic .ugb-pricing-box__item{margin-top:1.5em;margin-bottom:1.5em;}
+.ugb-pricing-box--design-basic .ugb-pricing-box__item>*{margin-top:0!important;margin-bottom:1rem!important;}
+.ugb-pricing-box--design-basic .ugb-pricing-box__item>:first-child{margin-top:0!important;}
+.ugb-pricing-box--design-basic .ugb-pricing-box__item>:last-child{margin-bottom:0!important;}
+.ugb-button{margin-top:1.5em;margin-bottom:1.5em;}
+.ugb-button>*{margin-top:0!important;margin-bottom:1rem!important;}
+.ugb-button>:first-child{margin-top:0!important;}
+.ugb-button>:last-child{margin-bottom:0!important;}
+.ugb-button{border:none;border-radius:4px;display:inline-block;cursor:pointer;opacity:1;background:var(--s-primary-color,#2091e1);transition:opacity .2s ease-in-out;padding-bottom:calc(.375em - var(--s-border, 0px));padding-left:1.25em;padding-right:1.25em;padding-top:calc(.375em - var(--s-border, 0px));line-height:1.5!important;align-items:center;font-size:1em;}
+.ugb-button .ugb-button--inner{text-decoration:none!important;display:block;color:#fff;box-shadow:none!important;margin:0!important;padding:0!important;}
+.ugb-button:hover{opacity:.85;box-shadow:none!important;}
+.ugb-button:not(.ugb-link-button):not(.ugb-button--design-link){box-shadow:none!important;text-decoration:none!important;}
+.ugb-button .ugb-button--inner:hover{color:#fff;}
+.ugb-button.ugb-button--size-medium{padding-left:1.5em;padding-right:1.5em;padding-top:calc(.6em - var(--s-border, 0px));padding-bottom:calc(.6em - var(--s-border, 0px));}
+.ugb-button.ugb-button--size-medium .ugb-button--inner{font-size:1.075em;}
+.ugb-button--align-center{margin-left:auto;margin-right:auto;}
+.ugb--shadow-7{box-shadow:7px 5px 30px rgba(72,73,121,.15)!important;}
+div[class^=wp-block-]{z-index:1;}
+@media screen and (max-width:782px){
+.ugb-pricing-box__item{padding:40px 23.33333px;--box-padding-vert:40px;--box-padding-hori:23.33333px;}
+}
+@media screen and (max-width:600px){
+.ugb-pricing-box__item{padding:35px 17.5px;--box-padding-vert:35px;--box-padding-hori:17.5px;}
+}
+}
+/*! CSS Used from: https://dessign.net/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/frontend_blocks__premium_only.css?ver=1.17.1 ; media=all */
+@media all{
+.ugb--shadow-7{box-shadow:7px 5px 30px rgba(72,73,121,.15)!important;}
+div[class^=wp-block-]{z-index:1;}
+}
+/*! CSS Used from: https://dessign.net/wp-content/themes/GutenbergStarterTheme/style.css?ver=1.0.0 ; media=all */
+@media all{
+::-moz-selection{background-color:#000;color:#fff;}
+::selection{background-color:#000;color:#fff;}
+a{background-color:transparent;-webkit-transition:all 0.3s linear;-moz-transition:all 0.3s linear;-o-transition:all 0.3s linear;transition:all 0.3s linear;}
+a:active,a:hover{outline:0;}
+h3{font-size:1.56em;line-height:1.4;}
+h3{color:#32373c;clear:both;}
+*,*:before,*:after{box-sizing:inherit;}
+a{color:#222;}
+a:visited{color:#333;}
+a:hover,a:focus,a:active{color:#000000;}
+a:focus{outline:thin dotted;}
+a:hover,a:active{outline:0;}
+}
+/*! CSS Used from: Embedded */
+.ugb-4940461.ugb-pricing-box .ugb-pricing-box__subprice{font-size:1em!important;}

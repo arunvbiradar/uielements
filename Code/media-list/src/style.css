@@ -1,0 +1,61 @@
+/*! CSS Used from: https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main.css?v438 */
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+div,h3,h4,p,a,img{margin:0;padding:0;}
+article,footer,section{display:block;}
+a img{border:none;}
+h3,h4{font-family:neue-haas-grotesk-display, sans-serif;line-height:1.1;font-weight:600;}
+h3{margin-bottom:1.5rem;}
+h4{margin-bottom:0.25rem;}
+a{outline:none;color:#111;text-decoration:none;font-weight:inherit;}
+a:hover,a:focus{color:#626262;}
+a:focus{outline:1px solid rgba(0, 0, 0, 0.05);}
+h4 a{outline:none;text-decoration:none;}
+img{max-width:100%;height:auto;}
+a:hover img{opacity:0.9;}
+.clr{float:none;clear:both;}
+.ct-latest-any-bottom a{white-space:nowrap;font-size:0.9rem;vertical-align:middle;}
+.ct-latest-any-bottom a::after{font-family:'codrops-icons';content:'\e604';padding-left:0.5em;vertical-align:middle;}
+.ct-latest-thumb a:hover{border-color:#98bcdc;}
+article .ct-subline{position:relative;font-size:0.9rem;}
+.ct-latest-thumb{float:left;position:relative;z-index:10;margin:0 1rem 1rem 0;}
+.ct-latest-thumb a{display:block;width:105px;height:105px;background:#237dac url(https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/images/thumb_small.png) no-repeat center center;-webkit-background-size:100%;-moz-background-size:100%;background-size:100%;}
+.ct-latest-thumb a img{display:block;width:105px;height:105px;}
+.ct-feat-excerpt{line-height:1.5;}
+.ct-subline time{margin:0 2px;padding:0px;white-space:nowrap;}
+.ct-coll-archive article .ct-subline{margin:0 0 1em;padding:0;}
+.ct-coll-archive .ct-latest-thumb{float:none;margin:0 0 1.5em 0;}
+.ct-coll-archive .ct-latest-thumb a,.ct-coll-archive .ct-latest-thumb a img{width:auto;height:auto;margin:0 auto;background:none;}
+.ct-latest-any{border:4px solid #f5f5f5;background:#fff;margin:0 0 2rem 0;}
+.ct-latest-any h3{margin-bottom:3rem;}
+.ct-latest-any .ct-subline{font-size:0.75em;margin:0.5em 0;padding:0;}
+.ct-latest-any article{margin:1.5rem 0;}
+.ct-latest-any article:last-of-type{padding-bottom:4px;border-bottom:none;}
+.ct-latest-any.ct-coll-archive .ct-latest-thumb{float:left;margin:0 15px 25px 0;}
+.ct-latest-any.ct-coll-archive .ct-latest-thumb a,.ct-latest-any.ct-coll-archive .ct-latest-thumb img{width:97px;height:auto;transform:translate3d(0, 0, 0);}
+.ct-latest-any .ct-latest-thumb a,.ct-latest-any .ct-latest-thumb img{width:50px;height:50px;}
+.ct-latest-any.ct-coll-archive .ct-feat-excerpt{clear:right;font-size:0.9rem;line-height:1.4;}
+.ct-latest-any-wrap{position:relative;padding:3rem;}
+.ct-latest-any-bottom{clear:both;}
+::-webkit-input-placeholder{color:#ddd;}
+:-moz-placeholder{color:#ddd;}
+::-moz-placeholder{color:#ddd;}
+:-ms-input-placeholder{color:#ddd;}
+@media screen and (max-width:800px){
+.ct-latest-any,.ct-latest-any.ct-coll-archive{margin:0;width:100%;border:none;border-bottom:3px solid #f5f5f5;}
+.ct-latest-any article{padding-bottom:1rem;}
+.ct-latest-any-wrap{padding:3rem 0;}
+}
+@media screen and (max-width:600px){
+.ct-latest-any{margin-top:10px;width:100%;}
+}
+@media screen and (max-width:320px){
+.ct-latest-thumb{display:none;}
+}
+/*! CSS Used from: https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/css/main_print.css?v5 ; media=print */
+@media print{
+*{text-shadow:none!important;box-shadow:none!important;float:none!important;width:auto!important;}
+.ct-latest-any.ct-coll-archive h3{font-family:Arial;text-transform:none;}
+}
+/*! CSS Used fontfaces */
+@font-face{font-family:neue-haas-grotesk-display;src:url(https://use.typekit.net/af/8a200c/00000000000000003b9b204a/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/8a200c/00000000000000003b9b204a/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/8a200c/00000000000000003b9b204a/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;}
+@font-face{font-weight:normal;font-style:normal;font-family:'codrops-icons';src:url('https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/fonts/codrops-icons.eot');src:url('https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/fonts/codrops-icons.eot#iefix') format('embedded-opentype'), url('https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/fonts/codrops-icons.woff') format('woff'), url('https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/fonts/codrops-icons.ttf') format('truetype'), url('https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/themes/codropstheme03/fonts/codrops-icons.svg#codrops-icons') format('svg');}
